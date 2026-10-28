@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello</title>
+<style>
+  :root {
+    --bg: #eef3f7;
+    --fg: #14232e;
+    --accent: #2a6f97;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #101a22; --fg: #e6eef4; --accent: #7fb7d9; }
+  }
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+    text-align: center;
+  }
+  h1 {
+    font-size: clamp(3rem, 14vw, 8rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin: 0;
+  }
+  p { margin: 0.5rem 0 0; font-size: 1.25rem; color: var(--accent); }
+</style>
+</head>
+<body>
+  <main>
+    <h1>Hello!</h1>
+    <p>안녕하세요, 반갑습니다.</p>
+  </main>
+</body>
+</html>
